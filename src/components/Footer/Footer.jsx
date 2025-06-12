@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div>
@@ -32,7 +32,7 @@ const Footer = () => {
                   </label>
 
                   <div className="border border-gray-100 p-2 focus-within:ring-3 sm:flex sm:items-center sm:gap-4 dark:border-gray-800">
-                    <input type="email" id="UserEmail" placeholder="john@rhcp.com" className="w-full border-none focus:border-transparent focus:ring-transparent sm:text-sm dark:bg-gray-900 dark:text-white" />
+                    <input type="email" id="UserEmail" placeholder="john@rhcp.com" className="w-full outline-none border-none focus:border-transparent focus:ring-transparent sm:text-sm dark:bg-gray-900 dark:text-white" />
 
                     <button className="mt-1 w-full bg-teal-500 px-6 py-3 text-sm font-bold tracking-wide text-white uppercase transition-none hover:bg-teal-600 sm:mt-0 sm:w-auto sm:shrink-0">Sign Up</button>
                   </div>
@@ -44,33 +44,9 @@ const Footer = () => {
 
                 <ul className="mt-6 space-y-4 text-sm">
                   <li>
-                    <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
-                      1on1 Coaching
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
-                      Company Review
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
-                      Accounts Review
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
-                      HR Consulting
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
-                      SEO Optimisation
-                    </a>
+                    <Link to="/" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                      Games
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -80,21 +56,9 @@ const Footer = () => {
 
                 <ul className="mt-6 space-y-4 text-sm">
                   <li>
-                    <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                    <Link to={'/about'} className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
                       About
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
-                      Meet the Team
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
-                      Accounts Review
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -104,74 +68,14 @@ const Footer = () => {
 
                 <ul className="mt-6 space-y-4 text-sm">
                   <li>
-                    <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                    <Link to={'/contact'} className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
                       Contact
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
-                      FAQs
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
-                      Live Chat
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
 
-              <div className="col-span-2 sm:col-span-1">
-                <p className="font-medium text-gray-900 dark:text-white">Legal</p>
-
-                <ul className="mt-6 space-y-4 text-sm">
-                  <li>
-                    <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
-                      Accessibility
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
-                      Returns Policy
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
-                      Refund Policy
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
-                      Hiring-3 Statistics
-                    </a>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="col-span-2 sm:col-span-1">
-                <p className="font-medium text-gray-900 dark:text-white">Downloads</p>
-
-                <ul className="mt-6 space-y-4 text-sm">
-                  <li>
-                    <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
-                      Marketing Calendar
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
-                      SEO Infographics
-                    </a>
-                  </li>
-                </ul>
-              </div>
-
-              <ul className="col-span-2 flex justify-start gap-6 lg:col-span-5 lg:justify-end">
+              <ul className="col-span-2 flex justify-start gap-6 lg:col-span-2 lg:justify-end">
                 <li>
                   <a href="#" rel="noreferrer" target="_blank" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
                     <span className="sr-only">Facebook</span>
